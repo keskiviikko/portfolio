@@ -39,7 +39,7 @@ export default class About extends Component {
                     Rasmus has completed Academy's Accelerated Learning Programin JavaScript. Accelerated Learning is a fast way to a new career for ambitious and driven individuals with the right skills to acquire new knowledge. The education method focuses on high-speed practical learning, agile teamwork and continuous feedback dialogue. The education is always based on specific tasks relevant to the professional role. This makes the learning process extremely efficient and consultants can contribute as junior IT consultants from the first day after the training.
                 </div><br />
                 <div>
-                    <h3>Licenses & Certifications</h3>
+                    <h4>Licenses & Certifications</h4>
                     <OverlayTrigger
                         key='scrum'
                         placement='top'

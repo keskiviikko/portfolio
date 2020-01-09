@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,3 +41,12 @@
 #imgContainer img {
   border-radius: 50%;
 }
+
+#headerContainer p {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
