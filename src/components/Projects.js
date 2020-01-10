@@ -27,26 +27,26 @@ export default class Projects extends Component {
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Used technologies</th>
+                                        <th>Technologies used</th>
                                         <th>Rasmus's roles in this project</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>REST API Design</td>
-                                        <td>Front-end developer</td>
+                                        <td>Full Stack Developer</td>
                                     </tr>
                                     <tr>
                                         <td>Phaser 3 (Phaser Game Framework)</td>
-                                        <td>Game designer</td>
+                                        <td>Game Designer</td>
                                     </tr>
                                     <tr>
                                         <td>JavaScript, HTML5</td>
-                                        <td>Game programmer</td>
+                                        <td>Game Programmer</td>
                                     </tr>
                                     <tr>
                                         <td>Node.js, Express</td>
-                                        <td>Game tester</td>
+                                        <td>Game Tester</td>
                                     </tr>
                                     <tr>
                                         <td>MongoDB</td>
