@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Table from 'react-bootstrap/Table'
+import Tooltip from 'react-bootstrap/Tooltip'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 export default class Projects extends Component {
     render() {
         return (
             <div>
-                <div id="headerContainer">
+                <div className="headerContainer">
                     <p>Rasmus has finished Academy’s JavaScript program. During the course, he has, for example, taken part in the following projects:</p>
                 </div><br />
                 <Container>
@@ -20,8 +21,10 @@ export default class Projects extends Component {
                             </video>
                         </Col>
                         <Col>
-                            <h5>BLARGON 7 - A Space Shooter Game -</h5><br />
-                            <Table>
+                            <div className="projectTitle">
+                                <a href="https://github.com/LValtanen/Spaceshooter" target="_blank" rel="noopener noreferrer">BLARGON 7 - A Space Shooter Game -</a>
+                            </div>
+                            <table>
                                 <thead>
                                     <tr>
                                         <th>Used technologies</th>
@@ -30,28 +33,44 @@ export default class Projects extends Component {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            <ul>
-                                                <li>REST API Design</li>
-                                                <li>Phaser 3 (Phaser Game Framework)</li>
-                                                <li>JavaScript, HTML5</li>
-                                                <li>Node.js, Express</li>
-                                                <li>MongoDB</li>
-                                                <li>Android Studio</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>Front-end developer</li>
-                                                <li>Game designer</li>
-                                                <li>Game programmer</li>
-                                                <li>Game tester</li>
-                                            </ul>
-                                        </td>
+                                        <td>REST API Design</td>
+                                        <td>Front-end developer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phaser 3 (Phaser Game Framework)</td>
+                                        <td>Game designer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaScript, HTML5</td>
+                                        <td>Game programmer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Node.js, Express</td>
+                                        <td>Game tester</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MongoDB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Android Studio</td>
                                     </tr>
                                 </tbody>
-                            </Table>
-                            <a href="https://github.com/LValtanen/Spaceshooter" target="_blank" rel="noopener noreferrer">GitHub</a><br /><br />
+                            </table>
+                            <div className="imgContainer">
+                                <OverlayTrigger
+                                    key='github'
+                                    placement='top'
+                                    overlay={
+                                        <Tooltip id={"tooltip-github"}>
+                                            GitHub
+                                        </Tooltip>
+                                    }
+                                >
+                                    <a href="https://github.com/LValtanen/Spaceshooter/tree/rasmus" target="_blank" rel="noopener noreferrer">
+                                        <img src="images/github-icon.png" alt="github" height="30" width="30" />
+                                    </a>
+                                </OverlayTrigger>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

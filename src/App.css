@@ -38,11 +38,11 @@
   }
 }
 
-#imgContainer img {
+.imgContainer img {
   border-radius: 50%;
 }
 
-#headerContainer p {
+.headerContainer p {
   text-align: center;
 }
 
@@ -50,3 +50,39 @@ ul {
   list-style-type: none;
 }
 
+table {
+  border: none;
+}
+
+th, td {
+  padding: 7px;
+}
+
+.projectTitle {
+  margin-bottom: 20px;
+}
+
+.projectTitle a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.projectTitle a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid #000000;
+  transition: 0.4s;
+}
+
+.projectTitle a:hover:after {
+  width: 100%;
+}
+
+.projectTitle a:hover {
+  font-style: italic;
+}

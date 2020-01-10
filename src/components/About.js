@@ -6,7 +6,7 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <div id="imgContainer">
+                <div className="imgContainer">
                     <img src="images/photo.jpg" alt="that's me" height="150" width="150" />
                     <OverlayTrigger
                         key='github'
