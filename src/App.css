@@ -22,6 +22,7 @@ ul {
 
 table {
   border: none;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -31,18 +32,14 @@ td {
   padding: 7px;
 }
 
-.projectTitle {
-  margin-bottom: 20px;
-}
-
-.projectTitle a {
+.animatedTitle a {
   color: #000000;
   font-size: 20px;
   text-decoration: none;
   position: relative;
 }
 
-.projectTitle a:after {
+.animatedTitle a:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -52,11 +49,11 @@ td {
   transition: 0.4s;
 }
 
-.projectTitle a:hover:after {
+.animatedTitle a:hover:after {
   width: 100%;
 }
 
-.projectTitle a:hover {
+.animatedTitle a:hover {
   font-style: italic;
 }
 
@@ -67,4 +64,9 @@ td {
 
 .timeline h4 {
   font-size: 15px;
+}
+
+.timeline h5 {
+  font-size: 15px;
+  color: gray;
 }

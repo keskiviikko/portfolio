@@ -21,7 +21,7 @@ export default class Projects extends Component {
                             </video>
                         </Col>
                         <Col>
-                            <div className="projectTitle">
+                            <div className="animatedTitle">
                                 <a href="https://github.com/LValtanen/Spaceshooter" target="_blank" rel="noopener noreferrer">BLARGON 7 - A Space Shooter Game -</a>
                             </div>
                             <table>
