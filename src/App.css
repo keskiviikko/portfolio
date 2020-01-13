@@ -26,10 +26,6 @@ a img:hover {
   filter: opacity(0.7);
 }
 
-.imgContainer {
-  text-align: center;
-}
-
 .imgContainer img {
   border-radius: 50%;
   margin: 2px;
@@ -92,8 +88,4 @@ td {
 .workExperience h5 {
   font-size: 15px;
   color: gray;
-}
-
-.highlight {
-  background-color: yellow;
 }
