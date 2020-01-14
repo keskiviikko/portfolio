@@ -30,7 +30,17 @@ a img:hover {
 }
 
 .headerContainer p {
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .headerContainer p {
+    text-align: center;
+  }
 }
 
 ul {
@@ -41,6 +51,11 @@ table {
   border: none;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+video {
+  display: block;
+  margin: 0 auto 15px auto;
 }
 
 /* Selects all <th> elements and all <td> elements */

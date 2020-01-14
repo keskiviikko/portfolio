@@ -11,15 +11,16 @@ export default class Projects extends Component {
       <div>
         <div className="headerContainer">
           <p>
-            I have finished Academy’s JavaScript program. During the course, I
-            have, for example, taken part in the following projects:
+            I've finished Academy’s Full-Stack Web Development program. During
+            the course, I have, for example, taken part in the following
+            projects:
           </p>
         </div>
         <br />
         <Container>
           <Row className="row">
-            <Col className="column" lg={5}>
-              <video height="400" autoPlay loop muted playsinline>
+            <Col className="columnVideo" lg={5}>
+              <video height="400" autoPlay loop muted playsInline>
                 <source src="videos/blargon7.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -38,7 +39,7 @@ export default class Projects extends Component {
                 <thead>
                   <tr>
                     <th>Technologies used</th>
-                    <th>Rasmus's roles in this project</th>
+                    <th>My roles in this project</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -73,7 +74,7 @@ export default class Projects extends Component {
                   overlay={<Tooltip id={"tooltip-github"}>GitHub</Tooltip>}
                 >
                   <a
-                    href="https://github.com/LValtanen/Spaceshooter/tree/rasmus"
+                    href="https://github.com/LValtanen/Spaceshooter"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
