@@ -77,9 +77,11 @@ export default class About extends Component {
                     <Accordion.Collapse eventKey="0">
                       <Card.Body>
                         <p>
-                          Open to job opportunities! Recently graduated from
-                          Academy's 12 week Accelerated Learning program in
-                          JavaScript.
+                          <i>
+                            Open to job opportunities! Recently graduated from
+                            Academy's 12 week Accelerated Learning program in
+                            Full-Stack Web Development.
+                          </i>
                         </p>
                         <p>
                           I'm a natural problem solver. I won’t be stopped by
@@ -87,12 +89,26 @@ export default class About extends Component {
                           dilemmas or tough situations. I'm a highly organised
                           person. My strengths are my professionalism and my
                           ability to learn quickly and intuitively. I'm a
-                          diligent employee and a reliable colleague. My goal is
-                          to get my career started in IT industry as a junior
-                          developer. I'm motivated by the industry’s immense
-                          possibilities and challenges. I'm also skilled at
-                          composing written material and I have great
-                          presentation skills.
+                          diligent employee and a reliable colleague.{" "}
+                        </p>
+                        <p>
+                          My current goal is to take the next big step in my
+                          career in ICT industry as a junior developer. I'm
+                          motivated by the industry’s immense possibilities and
+                          challenges. I'm also skilled at composing written
+                          material, I have great presentation skills and I am a
+                          certified Scrum Master.
+                        </p>
+                        <p>
+                          You can find my contact information{" "}
+                          <a
+                            href="https://www.linkedin.com/in/rasmus-rajasalo/detail/contact-info/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            here
+                          </a>
+                          .
                         </p>
                       </Card.Body>
                     </Accordion.Collapse>
