@@ -11,20 +11,20 @@ export default class Projects extends Component {
       <div>
         <div className="headerContainer">
           <p>
-            Rasmus has finished Academy’s JavaScript program. During the course,
-            he has, for example, taken part in the following projects:
+            I have finished Academy’s JavaScript program. During the course, I
+            have, for example, taken part in the following projects:
           </p>
         </div>
         <br />
         <Container>
-          <Row id="blargon">
-            <Col className="column-P1">
+          <Row className="row">
+            <Col className="column" lg={5}>
               <video height="400" autoPlay loop muted>
                 <source src="videos/blargon7.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </Col>
-            <Col className="column-P2">
+            <Col className="column" lg={6}>
               <div className="animatedTitle">
                 <a
                   href="https://github.com/LValtanen/Spaceshooter"
@@ -66,7 +66,7 @@ export default class Projects extends Component {
                   </tr>
                 </tbody>
               </table>
-              <div className="imgContainer">
+              <div className="iconContainer">
                 <OverlayTrigger
                   key="github"
                   placement="left"

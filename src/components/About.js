@@ -12,8 +12,8 @@ export default class About extends Component {
     return (
       <div>
         <Container>
-          <Row>
-            <Col className="column-A1" xs={5} md={3}>
+          <Row className="row">
+            <Col className="column" lg={3}>
               <div className="imgContainer">
                 <img
                   src="images/photo.jpg"
@@ -21,6 +21,10 @@ export default class About extends Component {
                   height="150"
                   width="150"
                 />
+                <div className="info">
+                  <h4>Rasmus Rajasalo</h4>
+                  <p>Junior Developer</p>
+                </div>
                 <OverlayTrigger
                   key="github"
                   placement="left"
@@ -63,7 +67,7 @@ export default class About extends Component {
                 </OverlayTrigger>
               </div>
             </Col>
-            <Col className="column-A2" xs={10} md={6}>
+            <Col className="column" lg={8}>
               <div className="workExperience">
                 <Accordion defaultActiveKey="0">
                   <Card>
@@ -252,14 +256,6 @@ export default class About extends Component {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="3">
                       <Card.Body>
-                        <h3>Languages</h3>
-                        <h4>Finnish</h4>
-                        <p>Native proficiency</p>
-                        <h4>English</h4>
-                        <p>Full professional proficiency</p>
-                        <h4>Japanese</h4>
-                        <p>Professional working proficiency</p>
-                        <br />
                         <h3>Tools & Technologies</h3>
                         <h4>Web development</h4>
                         <p>
@@ -279,6 +275,14 @@ export default class About extends Component {
                           (RubyGems), Ruby on Rails, PostgreSQL, MongoDB, CRUD,
                           JWT, Postman, Testing (Jest, Jasmine)
                         </p>
+                        <br />
+                        <h3>Languages</h3>
+                        <h4>Finnish</h4>
+                        <p>Native proficiency</p>
+                        <h4>English</h4>
+                        <p>Full professional proficiency</p>
+                        <h4>Japanese</h4>
+                        <p>Professional working proficiency</p>
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
@@ -292,30 +296,22 @@ export default class About extends Component {
                           <tbody>
                             <tr>
                               <td>
-                                <OverlayTrigger
-                                  key="scrum"
-                                  placement="top"
-                                  overlay={
-                                    <Tooltip className={"tooltip-scrum"}>
-                                      Scrum.org
-                                    </Tooltip>
-                                  }
-                                >
-                                  <a
-                                    href="https://www.scrum.org/user/577137"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    <img
-                                      src="images/badge-psmi.png"
-                                      alt="scrum master"
-                                      width="30"
-                                    />
-                                  </a>
-                                </OverlayTrigger>
+                                <img
+                                  src="images/badge-psmi.png"
+                                  alt="scrum master"
+                                  width="30"
+                                />
                               </td>
-                              <td>Professional Scrum Master I</td>
-                              <td>(Issued Oct 2019)</td>
+                              <td className="animatedTitle">
+                                <a
+                                  href="https://www.scrum.org/user/577137"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  Professional Scrum Master I
+                                </a>
+                              </td>
+                              <td>Issued Oct 2019</td>
                             </tr>
                           </tbody>
                         </table>
@@ -327,7 +323,9 @@ export default class About extends Component {
                       Interests
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="5">
-                      <Card.Body>Reading, board games</Card.Body>
+                      <Card.Body>
+                        Reading, board games, history and floorball.
+                      </Card.Body>
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
