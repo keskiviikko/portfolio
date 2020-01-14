@@ -19,7 +19,7 @@ export default class Projects extends Component {
         <Container>
           <Row className="row">
             <Col className="column" lg={5}>
-              <video height="400" autoPlay loop muted>
+              <video height="400" autoPlay loop muted playsinline>
                 <source src="videos/blargon7.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
