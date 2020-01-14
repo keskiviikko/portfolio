@@ -1,3 +1,8 @@
+.header {
+  margin: 10px;
+  text-align: center;
+}
+
 .tooltip-linkedin>.tooltip-inner {
   background-color: #0077B5;
 }
