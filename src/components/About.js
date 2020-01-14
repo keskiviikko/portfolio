@@ -16,7 +16,7 @@ export default class About extends Component {
             <Col className="column" lg={3}>
               <div className="imgContainer">
                 <img
-                  src="images/photo.jpg"
+                  src="images/photo-2.jpg"
                   alt="that's me"
                   height="150"
                   width="150"
