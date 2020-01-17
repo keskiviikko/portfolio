@@ -64,6 +64,20 @@ td {
   padding: 7px;
 }
 
+.projectTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Selects all <a> elements inside .animatedTitle divs where the parent is .projectTitle */
+.projectTitle > .animatedTitle a {
+  font-size: 25px;
+}
+
+.introText {
+  margin-top: 20px;
+}
+
 .animatedTitle a {
   color: #000000;
   font-size: 20px;

@@ -20,20 +20,25 @@ export default class Projects extends Component {
         <Container>
           <Row className="row">
             <Col className="columnVideo" lg={5}>
+              <div className="projectTitle">
+                <div className="animatedTitle">
+                  <a
+                    href="https://github.com/LValtanen/Spaceshooter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    BLARGON 7
+                  </a>
+                </div>
+              </div>
               <video height="400" autoPlay loop muted playsInline>
                 <source src="videos/blargon7.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </Col>
             <Col className="column" lg={6}>
-              <div className="animatedTitle">
-                <a
-                  href="https://github.com/LValtanen/Spaceshooter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  BLARGON 7 - A Space Shooter Game -
-                </a>
+              <div className="introText">
+                <p>Arcade space shooter game for Android and browsers.</p>
               </div>
               <table>
                 <thead>
@@ -63,7 +68,10 @@ export default class Projects extends Component {
                     <td>MongoDB</td>
                   </tr>
                   <tr>
-                    <td>Android Studio</td>
+                    <td>Android Studio, Apache Cordova</td>
+                  </tr>
+                  <tr>
+                    <td>AWS</td>
                   </tr>
                 </tbody>
               </table>
