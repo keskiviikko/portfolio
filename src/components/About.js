@@ -66,6 +66,27 @@ export default class About extends Component {
                   </a>
                 </OverlayTrigger>
               </div>
+              <div className="scrumBadge">
+                <OverlayTrigger
+                  key="scrum"
+                  placement="right"
+                  overlay={
+                    <Tooltip className={"tooltip-scrum"}>Scrum.org</Tooltip>
+                  }
+                >
+                  <a
+                    href="https://www.scrum.org/user/577137"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/badge-psmi.png"
+                      alt="scrum master"
+                      width="30"
+                    />
+                  </a>
+                </OverlayTrigger>
+              </div>
             </Col>
             <Col className="column" lg={8}>
               <div className="workExperience">
@@ -223,6 +244,30 @@ export default class About extends Component {
                           consultants can contribute as junior IT consultants
                           from the first day after the training.
                         </p>
+                        <p className="jsprogram">Program contents:</p>
+                        <p>
+                          Week 1: HTML5, CSS, JavaScript, APIs, XHR, jQuery,
+                          DOM, regex
+                        </p>
+                        <p>
+                          Week 2: Responsive web, ES6+, Node.js, Express, REST
+                        </p>
+                        <p>Weeks 2–9: Business communication</p>
+                        <p>Week 3: Git, GitHub, TDD, Testing & Node.js, Pug</p>
+                        <p>Week 4: Scrum, 1st project week</p>
+                        <p>Week 5: Databases, SQL, MongoDB, UX</p>
+                        <p>Week 6: React, React Bootstrap, React Hooks</p>
+                        <p>
+                          Week 7: Angular, TypeScript, Data visualization, PWAs
+                        </p>
+                        <p>Week 8: OWASP, 2nd project week</p>
+                        <p>Week 9: AWS fundamentals</p>
+                        <p>
+                          Week 10: API Design, React Native, Redux, Vue.js,
+                          Security
+                        </p>
+                        <p>Weeks 11–12: Final project</p>
+
                         <br />
                         <h3 className="animatedTitle">
                           <a
@@ -273,24 +318,28 @@ export default class About extends Component {
                     <Accordion.Collapse eventKey="3">
                       <Card.Body>
                         <h3>Tools & Technologies</h3>
-                        <h4>Web development</h4>
+                        <h4>Web Development</h4>
                         <p>
-                          Git, GitHub, HTTP / HTTPS, APIs, Terminal / Windows
-                          Console, JavaScript Algorithms and Data Structures,
-                          regex, DevTools, Package Managers, TDD, AWS
+                          HTTP/HTTPS and APIs, Terminal/Windows Console,
+                          JavaScript Algorithms and Data Structures, regex,
+                          DevTools, Package managers, TDD (Jest, Enzyme,
+                          Jasmine), Web Security, AWS fundamentals
                         </p>
                         <h4>Front-end</h4>
                         <p>
-                          HTML, CSS, JavaScript, TypeScript, jQuery, Bootstrap,
-                          Build Tools, ReactJS, React Native, Angular, Vue.js,
-                          Testing (Jest, Enzyme)
+                          HTML5, CSS (layouts, responsive design), JavaScript
+                          (ES6+, Fetch API, Ajax), TypeScript, jQuery,
+                          Bootstrap, Material-UI, Build Tools, ReactJS, React
+                          Native, Angular, Vue.js
                         </p>
                         <h4>Back-end</h4>
                         <p>
                           REST API Design, Node.js (npm, yarn), Express, Ruby
-                          (RubyGems), Ruby on Rails, PostgreSQL, MongoDB, CRUD,
-                          JWT, Postman, Testing (Jest, Jasmine)
+                          (RubyGems), Ruby on Rails, CRUD, Postman, PostgreSQL,
+                          MongoDB, Authentication
                         </p>
+                        <h4>Project Management</h4>
+                        <p>Git, GitHub, Scrum</p>
                         <br />
                         <h3>Languages</h3>
                         <h4>Finnish</h4>
@@ -311,13 +360,6 @@ export default class About extends Component {
                         <table>
                           <tbody>
                             <tr>
-                              <td>
-                                <img
-                                  src="images/badge-psmi.png"
-                                  alt="scrum master"
-                                  width="30"
-                                />
-                              </td>
                               <td className="animatedTitle">
                                 <a
                                   href="https://www.scrum.org/user/577137"
@@ -329,6 +371,19 @@ export default class About extends Component {
                               </td>
                               <td>Issued Oct 2019</td>
                             </tr>
+                            <tr>
+                              <td className="animatedTitle">
+                                <a
+                                  href="https://www.ets.org/toeic/organizations/listening-reading/about"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  TOEIC Listening & Reading
+                                </a>
+                              </td>
+                              <td>Test date Mar 2017</td>
+                              <td>Total score 990/990</td>
+                            </tr>
                           </tbody>
                         </table>
                       </Card.Body>
@@ -336,9 +391,30 @@ export default class About extends Component {
                   </Card>
                   <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="5">
-                      Interests
+                      Testimonials
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="5">
+                      <Card.Body>
+                        <p>
+                          "According to his supervisor, Mr. Rajasalo was
+                          friendly, polite, outgoing and professional in his
+                          dealings with customers and colleagues during his time
+                          with Berlitz."
+                        </p>
+                        <p>
+                          "Mr. Rajasalo has discharged his duties diligently to
+                          our great satisfaction showing accuracy,
+                          trustworthiness, and ability to cooperate. We warmly
+                          recommend him for similar employment."
+                        </p>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                  <Card>
+                    <Accordion.Toggle as={Card.Header} eventKey="6">
+                      Interests
+                    </Accordion.Toggle>
+                    <Accordion.Collapse eventKey="6">
                       <Card.Body>
                         Reading, board games, history and floorball.
                       </Card.Body>

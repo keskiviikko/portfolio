@@ -3,13 +3,29 @@
   text-align: center;
 }
 
+.jsprogram {
+  font-weight: bold;
+}
+
 .tooltip-linkedin>.tooltip-inner {
   background-color: #0077B5;
 }
 
-.bs-tooltip-auto[x-placement^="right"] span.arrow::before,
+/* .bs-tooltip-auto[x-placement^="right"] span.arrow::before,
 .bs-tooltip-right .arrow::before {
   border-right-color: #0077B5;
+} */
+
+.tooltip-linkedin .arrow::before {
+  border-right-color: #0077B5;
+}
+
+.tooltip-scrum>.tooltip-inner {
+  background-color: #4eabc0;
+}
+
+.tooltip-scrum .arrow::before {
+  border-right-color: #4eabc0;
 }
 
 /* Selects all <img> elements inside <a> elements */
@@ -20,13 +36,17 @@ a img:hover {
 
 .imgContainer {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .imgContainer img,
 .iconContainer img {
   border-radius: 50%;
   margin: 2px;
+}
+
+.scrumBadge {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .headerContainer p {
@@ -70,12 +90,20 @@ td {
 }
 
 /* Selects all <a> elements inside .animatedTitle divs where the parent is .projectTitle */
-.projectTitle > .animatedTitle a {
+.projectTitle>.animatedTitle a {
   font-size: 25px;
+}
+
+.homeText {
+  margin: 20px;
 }
 
 .introText {
   margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .animatedTitle a {
