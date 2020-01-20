@@ -19,7 +19,7 @@ export default class Projects extends Component {
         <br />
         <Container>
           <Row className="row">
-            <Col className="columnVideo" lg={5}>
+            <Col className="columnVideo">
               <div className="projectTitle">
                 <div className="animatedTitle">
                   <a
@@ -31,12 +31,12 @@ export default class Projects extends Component {
                   </a>
                 </div>
               </div>
-              <video height="400" autoPlay loop muted playsInline>
+              <video width="400" autoPlay loop muted playsInline>
                 <source src="videos/blargon7.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </Col>
-            <Col className="column" lg={6}>
+            <Col className="column">
               <div className="introText">
                 <p>Arcade space shooter game for Android and browsers.</p>
               </div>
@@ -97,6 +97,78 @@ export default class Projects extends Component {
               </div>
             </Col>
           </Row>
+          <br />
+          <Row className="row">
+            <Col className="columnVideo">
+              <div className="projectTitle">
+                <div className="animatedTitle">
+                  <a
+                    href="https://keskiviikko.github.io/jsjunat/html/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Train Timetable Search
+                  </a>
+                </div>
+              </div>
+              <video width="400" autoPlay loop muted playsInline>
+                <source src="videos/junat.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </Col>
+            <Col className="column">
+              <div className="introText">
+                <p>A three-day front-end project.</p>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Technologies used</th>
+                    <th>My roles in this project</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Digitraffic APIs</td>
+                    <td>Front-end Developer</td>
+                  </tr>
+                  <tr>
+                    <td>Geolocation API</td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript, HTML5</td>
+                  </tr>
+                  <tr>
+                    <td>CSS, Bootstrap</td>
+                  </tr>
+                  <tr>
+                    <td>User authentication</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div className="iconContainer">
+                <OverlayTrigger
+                  key="github"
+                  placement="left"
+                  overlay={<Tooltip id={"tooltip-github"}>GitHub</Tooltip>}
+                >
+                  <a
+                    href="https://github.com/keskiviikko/jsjunat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/github-icon.png"
+                      alt="github"
+                      height="30"
+                      width="30"
+                    />
+                  </a>
+                </OverlayTrigger>
+              </div>
+            </Col>
+          </Row>
+          <br />
         </Container>
       </div>
     );
