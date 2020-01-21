@@ -163,3 +163,9 @@ a:hover {
   font-size: 15px;
   color: gray;
 }
+
+#chartdiv {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+}

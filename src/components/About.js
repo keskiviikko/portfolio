@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -327,10 +328,10 @@ export default class About extends Component {
                         </p>
                         <h4>Front-end</h4>
                         <p>
-                          HTML5, CSS (layouts, responsive design), JavaScript
-                          (ES6+, Fetch API, Ajax), TypeScript, jQuery,
-                          Bootstrap, Material-UI, Build Tools, ReactJS, React
-                          Native, Angular, Vue.js
+                          HTML5, CSS (layouts, responsive design, Bootstrap,
+                          Material-UI), JavaScript (ES6+, Fetch API, Ajax,
+                          jQuery), TypeScript, Data visualization (amCharts),
+                          Build Tools, ReactJS, React Native, Angular, Vue.js
                         </p>
                         <h4>Back-end</h4>
                         <p>
@@ -339,7 +340,7 @@ export default class About extends Component {
                           MongoDB, Authentication
                         </p>
                         <h4>Project Management</h4>
-                        <p>Git, GitHub, Scrum</p>
+                        <p>Git, GitHub, Bitbucket, Scrum</p>
                         <br />
                         <h3>Languages</h3>
                         <h4>Finnish</h4>
@@ -348,6 +349,10 @@ export default class About extends Component {
                         <p>Full professional proficiency</p>
                         <h4>Japanese</h4>
                         <p>Professional working proficiency</p>
+                        <br />
+                        <Link to="/skills">
+                          Skills as a collapsible force-directed tree
+                        </Link>
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
@@ -416,7 +421,8 @@ export default class About extends Component {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="6">
                       <Card.Body>
-                        Reading, board games, history and floorball. And Bloodborne.
+                        Reading, board games, history and floorball. And
+                        Bloodborne.
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
