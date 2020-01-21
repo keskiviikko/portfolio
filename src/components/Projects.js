@@ -32,7 +32,7 @@ export default class Projects extends Component {
                 </div>
               </div>
               <video width="400" autoPlay loop muted playsInline>
-                <source src="videos/blargon7.mp4" type="video/mp4" />
+                <source src="videos/blargon7-browser.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </Col>
@@ -68,6 +68,9 @@ export default class Projects extends Component {
                     <td>MongoDB</td>
                   </tr>
                   <tr>
+                    <td>User authentication</td>
+                  </tr>
+                  <tr>
                     <td>Android Studio, Apache Cordova</td>
                   </tr>
                   <tr>
@@ -78,8 +81,10 @@ export default class Projects extends Component {
               <div className="iconContainer">
                 <OverlayTrigger
                   key="github"
-                  placement="left"
-                  overlay={<Tooltip id={"tooltip-github"}>GitHub</Tooltip>}
+                  placement="right"
+                  overlay={
+                    <Tooltip className={"tooltip-github"}>GitHub</Tooltip>
+                  }
                 >
                   <a
                     href="https://github.com/LValtanen/Spaceshooter"
@@ -93,6 +98,21 @@ export default class Projects extends Component {
                       width="30"
                     />
                   </a>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  key="apk"
+                  placement="right"
+                  trigger="click"
+                  overlay={
+                    <Tooltip className={"tooltip-apk"}>APK (tbr)</Tooltip>
+                  }
+                >
+                  <img
+                    src="images/app-icon.png"
+                    alt="apk"
+                    height="30"
+                    width="30"
+                  />
                 </OverlayTrigger>
               </div>
             </Col>
@@ -118,7 +138,11 @@ export default class Projects extends Component {
             </Col>
             <Col className="column">
               <div className="introText">
-                <p>A three-day front-end project.</p>
+                <p>
+                  A three-day front-end mini-project at Academy. Users can look
+                  for train schedules using Digitraffic's open railway traffic
+                  data.
+                </p>
               </div>
               <table>
                 <thead>
@@ -149,7 +173,7 @@ export default class Projects extends Component {
               <div className="iconContainer">
                 <OverlayTrigger
                   key="github"
-                  placement="left"
+                  placement="right"
                   overlay={<Tooltip id={"tooltip-github"}>GitHub</Tooltip>}
                 >
                   <a

@@ -416,7 +416,7 @@ export default class About extends Component {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="6">
                       <Card.Body>
-                        Reading, board games, history and floorball.
+                        Reading, board games, history and floorball. And Bloodborne.
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>

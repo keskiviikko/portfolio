@@ -28,6 +28,14 @@
   border-right-color: #4eabc0;
 }
 
+.tooltip-apk>.tooltip-inner {
+  background-color: red;
+}
+
+.tooltip-apk .arrow::before {
+  border-right-color: red;
+}
+
 /* Selects all <img> elements inside <a> elements */
 a img:hover {
   -webkit-filter: opacity(0.7);
@@ -139,6 +147,10 @@ a:hover {
 }
 
 /* Work Experience */
+.workExperience {
+  margin-bottom: 20px;
+}
+
 .workExperience h3 {
   font-size: 20px;
 }
