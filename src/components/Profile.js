@@ -101,9 +101,9 @@ export default class Profile extends Component {
                       <Card.Body>
                         <p>
                           <i>
-                            Open to job opportunities! Recently graduated from
-                            Academy's 12 week Accelerated Learning program in
-                            Full-Stack Web Development.
+                            Open to job opportunities! Recently finished
+                            Academy's 12-week Accelerated Learning Program in
+                            full-stack web development.
                           </i>
                         </p>
                         <p>
@@ -234,10 +234,10 @@ export default class Profile extends Component {
                         <h4>Junior IT Consultant</h4>
                         <h5>2019</h5>
                         <p>
-                          I completed Academy's Accelerated Learning Program in
-                          JavaScript. Accelerated Learning is a fast way to a
-                          new career for ambitious and driven individuals with
-                          the right skills to acquire new knowledge. The
+                          I've completed Academy's Accelerated Learning Program
+                          in Web Development. Accelerated Learning is a fast way
+                          to a new career for ambitious and driven individuals
+                          with the right skills to acquire new knowledge. The
                           education method focuses on high-speed practical
                           learning, agile teamwork and continuous feedback
                           dialogue. The education is always based on specific

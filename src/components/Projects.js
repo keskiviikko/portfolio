@@ -24,11 +24,7 @@ export default class Projects extends Component {
     return (
       <div>
         <div className="headerContainer">
-          <p>
-            I've finished Academy’s Full-Stack Web Development program. During
-            the course, I have, for example, taken part in the following
-            projects:
-          </p>
+          <p>I have taken part in the following projects:</p>
         </div>
         <br />
         <Container>
@@ -36,7 +32,7 @@ export default class Projects extends Component {
             <Col className="columnVideo">
               <div className="projectTitle">
                 <div className="animatedTitle">
-                {/* This should be AWS link */}
+                  {/* This should be AWS link */}
                   <a
                     href="https://github.com/LValtanen/Spaceshooter"
                     target="_blank"
@@ -55,7 +51,8 @@ export default class Projects extends Component {
               <div className="introText">
                 <p>
                   Arcade space shooter game for Android and browsers. Includes
-                  user sign up and a global high-score list.
+                  user sign up and a global high-score list. Our team's final
+                  project at Academy's web development boot camp.
                 </p>
               </div>
               <table>
@@ -152,7 +149,12 @@ export default class Projects extends Component {
                   </a>
                 </div>
               </div>
-              <img src="images/js-junat.png" alt="train timetables" width="350" className="projectImg"/>
+              <img
+                src="images/js-junat.png"
+                alt="train timetables"
+                width="350"
+                className="projectImg"
+              />
               {/* <video width="350" autoPlay loop muted playsInline>
                 <source src="videos/junat.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
