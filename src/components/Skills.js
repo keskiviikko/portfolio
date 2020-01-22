@@ -27,7 +27,13 @@ export default class Skills extends Component {
         children: [
           {
             name: "Scrum",
-            value: 5
+            value: 5,
+            children: [
+              {
+                name: "Professional Scrum Master",
+                value: 2
+              }
+            ]
           },
           {
             name: "Version control",
@@ -59,8 +65,18 @@ export default class Skills extends Component {
             value: 5
           },
           {
-            name: "Terminal/Windows Console",
-            value: 5
+            name: "CLI",
+            value: 5,
+            children: [
+              {
+                name: "Terminal",
+                value: 2
+              },
+              {
+                name: "cmd",
+                value: 2
+              }
+            ]
           },
           {
             name: "JavaScript Algorithms and Data Structures",
@@ -72,10 +88,6 @@ export default class Skills extends Component {
           },
           {
             name: "DevTools",
-            value: 5
-          },
-          {
-            name: "Package managers",
             value: 5
           },
           {
@@ -97,8 +109,22 @@ export default class Skills extends Component {
             ]
           },
           {
-            name: "Web Security",
-            value: 5
+            name: "Web security",
+            value: 5,
+            children: [
+              {
+                name: "OWASP",
+                value: 2
+              },
+              {
+                name: "CORS",
+                value: 2
+              },
+              {
+                name: "HTTPS",
+                value: 2
+              }
+            ]
           },
           {
             name: "AWS fundamentals",
@@ -160,15 +186,15 @@ export default class Skills extends Component {
             ]
           },
           {
-            name: "TypeScript",
-            value: 5
-          },
-          {
-            name: "Data visualization",
+            name: "Package managers",
             value: 5,
             children: [
               {
-                name: "amCharts",
+                name: "npm",
+                value: 2
+              },
+              {
+                name: "yarn",
                 value: 2
               }
             ]
@@ -182,7 +208,7 @@ export default class Skills extends Component {
             value: 5,
             children: [
               {
-                name: "ReactJS",
+                name: "React",
                 value: 2
               },
               {
@@ -196,11 +222,29 @@ export default class Skills extends Component {
             ]
           },
           {
+            name: "TypeScript",
+            value: 5
+          },
+          {
             name: "Mobile Applications",
             value: 5,
             children: [
               {
                 name: "React Native",
+                value: 2
+              },
+              {
+                name: "Android Studio",
+                value: 2
+              }
+            ]
+          },
+          {
+            name: "Data visualization",
+            value: 5,
+            children: [
+              {
+                name: "amCharts",
                 value: 2
               }
             ]
@@ -260,18 +304,35 @@ export default class Skills extends Component {
           },
           {
             name: "REST API Design",
-            value: 5
-          },
-          {
-            name: "CRUD",
-            value: 5
-          },
-          {
-            name: "Postman",
-            value: 5
+            value: 5,
+            children: [
+              {
+                name: "Postman",
+                value: 2
+              }
+            ]
           },
           {
             name: "Authentication",
+            value: 5
+          }
+        ]
+      },
+      {
+        name: "Language skills",
+        collapsed: true,
+        value: 10,
+        children: [
+          {
+            name: "Finnish",
+            value: 5
+          },
+          {
+            name: "English",
+            value: 5
+          },
+          {
+            name: "Japanese",
             value: 5
           }
         ]

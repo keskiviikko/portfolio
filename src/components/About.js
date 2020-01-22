@@ -321,23 +321,25 @@ export default class About extends Component {
                         <h3>Tools & Technologies</h3>
                         <h4>Web Development</h4>
                         <p>
-                          HTTP/HTTPS and APIs, Terminal/Windows Console,
-                          JavaScript Algorithms and Data Structures, regex,
-                          DevTools, Package managers, TDD (Jest, Enzyme,
-                          Jasmine), Web Security, AWS fundamentals
+                          HTTP/HTTPS and APIs, CLI (Terminal, cmd), JavaScript
+                          Algorithms and Data Structures, regex, DevTools, TDD
+                          (Jest, Enzyme, Jasmine), Web Security (OWASP, CORS,
+                          HTTPS), AWS fundamentals
                         </p>
                         <h4>Front-end</h4>
                         <p>
                           HTML5, CSS (layouts, responsive design, Bootstrap,
                           Material-UI), JavaScript (ES6+, Fetch API, Ajax,
-                          jQuery), TypeScript, Data visualization (amCharts),
-                          Build Tools, ReactJS, React Native, Angular, Vue.js
+                          jQuery), Package managers (npm, yarn), Build Tools,
+                          Frameworks (React, Angular, Vue.js), TypeScript,
+                          Mobile Applications (React Native, Android Studio),
+                          Data visualization (amCharts)
                         </p>
                         <h4>Back-end</h4>
                         <p>
-                          REST API Design, Node.js (npm, yarn), Express, Ruby
-                          (RubyGems), Ruby on Rails, CRUD, Postman, PostgreSQL,
-                          MongoDB, Authentication
+                          Node.js (npm, yarn, Express), Ruby (RubyGems, Ruby on
+                          Rails), Databases (PostgreSQL, MongoDB), REST API
+                          Design (Postman), Authentication
                         </p>
                         <h4>Project Management</h4>
                         <p>Git, GitHub, Bitbucket, Scrum</p>
