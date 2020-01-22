@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Info from "./Info";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,7 +9,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
-export default class About extends Component {
+export default class Profile extends Component {
   render() {
     return (
       <div>
@@ -430,6 +431,7 @@ export default class About extends Component {
                   </Card>
                 </Accordion>
               </div>
+              <Info />
             </Col>
           </Row>
         </Container>
