@@ -36,6 +36,7 @@ export default class Projects extends Component {
             <Col className="columnVideo">
               <div className="projectTitle">
                 <div className="animatedTitle">
+                {/* This should be AWS link */}
                   <a
                     href="https://github.com/LValtanen/Spaceshooter"
                     target="_blank"
@@ -151,10 +152,11 @@ export default class Projects extends Component {
                   </a>
                 </div>
               </div>
-              <video width="350" autoPlay loop muted playsInline>
+              <img src="images/js-junat.png" alt="train timetables" width="350" className="projectImg"/>
+              {/* <video width="350" autoPlay loop muted playsInline>
                 <source src="videos/junat.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             </Col>
             <Col className="column">
               <div className="introText">

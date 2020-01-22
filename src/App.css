@@ -95,9 +95,17 @@ table {
   margin-bottom: 20px;
 }
 
+/* Project videos and images */
+
 video {
   display: block;
   margin: 0 auto 15px auto;
+}
+
+.projectImg {
+  display: block;
+  margin: 0 auto 15px auto;
+  border: 1px solid #eea29a;
 }
 
 /* If the screen size is 450px or less, set the font-size of <div> to 30px */

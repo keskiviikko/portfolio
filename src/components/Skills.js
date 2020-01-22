@@ -3,9 +3,11 @@ import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import * as am4plugins_forceDirected from "@amcharts/amcharts4/plugins/forceDirected";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
+// import am4themes_material from "@amcharts/amcharts4/themes/material.js";
 
 // Themes
 am4core.useTheme(am4themes_animated);
+// am4core.useTheme(am4themes_material);
 
 export default class Skills extends Component {
   componentDidMount() {
@@ -22,7 +24,6 @@ export default class Skills extends Component {
     networkSeries.data = [
       {
         name: "Web Development",
-        collapsed: true,
         value: 10,
         children: [
           {
@@ -99,7 +100,6 @@ export default class Skills extends Component {
       },
       {
         name: "Front-end",
-        collapsed: true,
         value: 10,
         children: [
           {
@@ -218,7 +218,6 @@ export default class Skills extends Component {
       },
       {
         name: "Back-end",
-        collapsed: true,
         value: 10,
         children: [
           {
@@ -285,7 +284,6 @@ export default class Skills extends Component {
       },
       {
         name: "Project Management",
-        collapsed: true,
         value: 10,
         children: [
           {
@@ -320,7 +318,6 @@ export default class Skills extends Component {
       },
       {
         name: "Language skills",
-        collapsed: true,
         value: 10,
         children: [
           {
@@ -344,14 +341,35 @@ export default class Skills extends Component {
     networkSeries.dataFields.id = "name";
     networkSeries.dataFields.value = "value";
     networkSeries.dataFields.children = "children";
-    networkSeries.dataFields.collapsed = "collapsed";
 
     networkSeries.nodes.template.tooltipText = "{name}";
     networkSeries.nodes.template.fillOpacity = 1;
 
     networkSeries.nodes.template.label.text = "{name}";
     networkSeries.fontSize = 15;
-    networkSeries.maxLevels = 2;
+
+    // Start with all nodes collapsed
+    networkSeries.maxLevels = 1;
+
+    // Expand single level only
+    networkSeries.nodes.template.expandAll = false;
+
+    // Close other nodes when one is opened
+    networkSeries.nodes.template.events.on("hit", function(ev) {
+      var targetNode = ev.target;
+      if (targetNode.isActive) {
+        networkSeries.nodes.each(function(node) {
+          if (
+            targetNode !== node &&
+            node.isActive &&
+            targetNode.dataItem.level == node.dataItem.level
+          ) {
+            node.isActive = false;
+          }
+        });
+      }
+    });
+
     networkSeries.minRadius = am4core.percent(2);
     networkSeries.maxRadius = am4core.percent(8);
     networkSeries.manyBodyStrength = -16;
