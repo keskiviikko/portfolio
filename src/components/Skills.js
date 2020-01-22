@@ -21,41 +21,6 @@ export default class Skills extends Component {
 
     networkSeries.data = [
       {
-        name: "Project Management",
-        collapsed: true,
-        value: 10,
-        children: [
-          {
-            name: "Scrum",
-            value: 5,
-            children: [
-              {
-                name: "Professional Scrum Master",
-                value: 2
-              }
-            ]
-          },
-          {
-            name: "Version control",
-            value: 5,
-            children: [
-              {
-                name: "Git",
-                value: 2
-              },
-              {
-                name: "GitHub",
-                value: 2
-              },
-              {
-                name: "Bitbucket",
-                value: 2
-              }
-            ]
-          }
-        ]
-      },
-      {
         name: "Web Development",
         collapsed: true,
         value: 10,
@@ -315,6 +280,41 @@ export default class Skills extends Component {
           {
             name: "Authentication",
             value: 5
+          }
+        ]
+      },
+      {
+        name: "Project Management",
+        collapsed: true,
+        value: 10,
+        children: [
+          {
+            name: "Scrum",
+            value: 5,
+            children: [
+              {
+                name: "Professional Scrum Master",
+                value: 2
+              }
+            ]
+          },
+          {
+            name: "Version control",
+            value: 5,
+            children: [
+              {
+                name: "Git",
+                value: 2
+              },
+              {
+                name: "GitHub",
+                value: 2
+              },
+              {
+                name: "Bitbucket",
+                value: 2
+              }
+            ]
           }
         ]
       },

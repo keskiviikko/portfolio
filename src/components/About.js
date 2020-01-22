@@ -19,8 +19,8 @@ export default class About extends Component {
                 <img
                   src="images/photo-2.jpg"
                   alt="that's me"
-                  height="150"
-                  width="150"
+                  height="170"
+                  width="170"
                 />
                 <div className="info">
                   <h4>Rasmus Rajasalo</h4>
@@ -41,8 +41,8 @@ export default class About extends Component {
                     <img
                       src="images/github-icon.png"
                       alt="github"
-                      height="30"
-                      width="30"
+                      height="35"
+                      width="35"
                     />
                   </a>
                 </OverlayTrigger>
@@ -61,8 +61,8 @@ export default class About extends Component {
                     <img
                       src="images/linkedin-icon.png"
                       alt="linkedin"
-                      height="30"
-                      width="30"
+                      height="35"
+                      width="35"
                     />
                   </a>
                 </OverlayTrigger>
@@ -83,7 +83,7 @@ export default class About extends Component {
                     <img
                       src="images/badge-psmi.png"
                       alt="scrum master"
-                      width="30"
+                      width="35"
                     />
                   </a>
                 </OverlayTrigger>
@@ -353,7 +353,7 @@ export default class About extends Component {
                         <p>Professional working proficiency</p>
                         <br />
                         <Link to="/skills">
-                          Skills as a collapsible force-directed tree
+                          Skills as a collapsible force-directed tree.
                         </Link>
                       </Card.Body>
                     </Accordion.Collapse>

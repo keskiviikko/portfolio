@@ -6,6 +6,20 @@ import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { color: "" };
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(state => ({
+      color: !state.color
+    }));
+  }
+
   render() {
     return (
       <div>
@@ -31,14 +45,17 @@ export default class Projects extends Component {
                   </a>
                 </div>
               </div>
-              <video width="400" autoPlay loop muted playsInline>
-                <source src="videos/blargon7-browser.mp4" type="video/mp4" />
+              <video width="350" autoPlay loop muted playsInline>
+                <source src="videos/blargon7-android.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </Col>
             <Col className="column">
               <div className="introText">
-                <p>Arcade space shooter game for Android and browsers.</p>
+                <p>
+                  Arcade space shooter game for Android and browsers. Includes
+                  user sign up and a global high-score list.
+                </p>
               </div>
               <table>
                 <thead>
@@ -94,8 +111,8 @@ export default class Projects extends Component {
                     <img
                       src="images/github-icon.png"
                       alt="github"
-                      height="30"
-                      width="30"
+                      height="35"
+                      width="35"
                     />
                   </a>
                 </OverlayTrigger>
@@ -104,14 +121,17 @@ export default class Projects extends Component {
                   placement="right"
                   trigger="click"
                   overlay={
-                    <Tooltip className={"tooltip-apk"}>APK (tbr)</Tooltip>
+                    <Tooltip className={"tooltip-apk"}>APK (TBR)</Tooltip>
                   }
                 >
                   <img
+                    id="apk"
                     src="images/app-icon.png"
                     alt="apk"
-                    height="30"
-                    width="30"
+                    height="35"
+                    width="35"
+                    style={{ backgroundColor: this.state.color ? "red" : "" }}
+                    onClick={this.handleClick}
                   />
                 </OverlayTrigger>
               </div>
@@ -131,7 +151,7 @@ export default class Projects extends Component {
                   </a>
                 </div>
               </div>
-              <video width="400" autoPlay loop muted playsInline>
+              <video width="350" autoPlay loop muted playsInline>
                 <source src="videos/junat.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -184,8 +204,8 @@ export default class Projects extends Component {
                     <img
                       src="images/github-icon.png"
                       alt="github"
-                      height="30"
-                      width="30"
+                      height="35"
+                      width="35"
                     />
                   </a>
                 </OverlayTrigger>
