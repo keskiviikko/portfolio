@@ -4,10 +4,20 @@ import * as am4charts from "@amcharts/amcharts4/charts";
 import * as am4plugins_forceDirected from "@amcharts/amcharts4/plugins/forceDirected";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 // import am4themes_material from "@amcharts/amcharts4/themes/material.js";
+// import am4themes_dataviz from "@amcharts/amcharts4/themes/dataviz.js";
+// import am4themes_kelly from "@amcharts/amcharts4/themes/kelly.js";
+// import am4themes_frozen from "@amcharts/amcharts4/themes/frozen.js";
+// import am4themes_moonrisekingdom from "@amcharts/amcharts4/themes/moonrisekingdom.js";
+// import am4themes_spiritedaway from "@amcharts/amcharts4/themes/spiritedaway.js";
 
 // Themes
 am4core.useTheme(am4themes_animated);
 // am4core.useTheme(am4themes_material);
+// am4core.useTheme(am4themes_dataviz);
+// am4core.useTheme(am4themes_kelly);
+// am4core.useTheme(am4themes_frozen);
+// am4core.useTheme(am4themes_moonrisekingdom);
+// am4core.useTheme(am4themes_spiritedaway);
 
 export default class Skills extends Component {
   componentDidMount() {
