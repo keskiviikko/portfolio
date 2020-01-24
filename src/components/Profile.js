@@ -235,7 +235,7 @@ export default class Profile extends Component {
                         <h5>2019</h5>
                         <p>
                           I've completed Academy's Accelerated Learning Program
-                          in Web Development. Accelerated Learning is a fast way
+                          in web development. Accelerated Learning is a fast way
                           to a new career for ambitious and driven individuals
                           with the right skills to acquire new knowledge. The
                           education method focuses on high-speed practical
@@ -424,7 +424,7 @@ export default class Profile extends Component {
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="6">
                       <Card.Body>
-                        Reading, board games, history and floorball. And
+                        Reading (currently His Dark Materials), board games, history and floorball. And
                         Bloodborne.
                       </Card.Body>
                     </Accordion.Collapse>
