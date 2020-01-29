@@ -367,6 +367,18 @@ export default class Profile extends Component {
                       <Card.Body>
                         <table>
                           <tbody>
+                          <tr>
+                              <td className="animatedTitle">
+                                <a
+                                  href="https://www.freecodecamp.org/certification/keskiviikko/javascript-algorithms-and-data-structures"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  JavaScript Algorithms and Data Structures
+                                </a>
+                              </td>
+                              <td>Issued Jan 2020</td>
+                            </tr>
                             <tr>
                               <td className="animatedTitle">
                                 <a
