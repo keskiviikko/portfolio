@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Tooltip from "react-bootstrap/Tooltip";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
 export default class Projects extends Component {
   constructor(props) {
     super(props);
-    this.state = { color: "" };
+    this.state = { color: '' };
 
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
@@ -98,7 +98,7 @@ export default class Projects extends Component {
                   key="github"
                   placement="right"
                   overlay={
-                    <Tooltip className={"tooltip-github"}>GitHub</Tooltip>
+                    <Tooltip className={'tooltip-github'}>GitHub</Tooltip>
                   }
                 >
                   <a
@@ -117,21 +117,44 @@ export default class Projects extends Component {
                 <OverlayTrigger
                   key="apk"
                   placement="right"
+                  overlay={
+                    <Tooltip className={'tooltip-apk'}>
+                      Download APK file (Android)
+                    </Tooltip>
+                  }
+                >
+                  <a
+                    href="https://drive.google.com/file/d/1WJ5xt6A18TrtFGL2OKd8YymTNk9OwaBS/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      id="apk"
+                      src="images/app-icon.png"
+                      alt="apk"
+                      height="35"
+                      width="35"
+                    />
+                  </a>
+                </OverlayTrigger>
+                {/* <OverlayTrigger
+                  key="apk"
+                  placement="right"
                   trigger="click"
                   overlay={
-                    <Tooltip className={"tooltip-apk"}>APK (TBR)</Tooltip>
+                    <Tooltip className={'tooltip-apk-tbr'}>APK (TBR)</Tooltip>
                   }
                 >
                   <img
-                    id="apk"
+                    id="apktbr"
                     src="images/app-icon.png"
                     alt="apk"
                     height="35"
                     width="35"
-                    style={{ backgroundColor: this.state.color ? "red" : "" }}
+                    style={{ backgroundColor: this.state.color ? 'red' : '' }}
                     onClick={this.handleClick}
                   />
-                </OverlayTrigger>
+                </OverlayTrigger> */}
               </div>
             </Col>
           </Row>
@@ -198,7 +221,7 @@ export default class Projects extends Component {
                 <OverlayTrigger
                   key="github"
                   placement="right"
-                  overlay={<Tooltip id={"tooltip-github"}>GitHub</Tooltip>}
+                  overlay={<Tooltip id={'tooltip-github'}>GitHub</Tooltip>}
                 >
                   <a
                     href="https://github.com/keskiviikko/jsjunat"

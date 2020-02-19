@@ -17,8 +17,8 @@ body {
   font-weight: bold;
 }
 
-.tooltip-linkedin>.tooltip-inner {
-  background-color: #0077B5;
+.tooltip-linkedin > .tooltip-inner {
+  background-color: #0077b5;
 }
 
 /* .bs-tooltip-auto[x-placement^="right"] span.arrow::before,
@@ -27,10 +27,10 @@ body {
 } */
 
 .tooltip-linkedin .arrow::before {
-  border-right-color: #0077B5;
+  border-right-color: #0077b5;
 }
 
-.tooltip-scrum>.tooltip-inner {
+.tooltip-scrum > .tooltip-inner {
   background-color: #4eabc0;
 }
 
@@ -38,15 +38,27 @@ body {
   border-right-color: #4eabc0;
 }
 
-.tooltip-apk>.tooltip-inner {
-  background-color: red;
+.tooltip-apk > .tooltip-inner {
+  background-color: darkblue;
 }
 
 .tooltip-apk .arrow::before {
-  border-right-color: red;
+  border-right-color: darkblue;
 }
 
 #apk:hover {
+  background-color: darkblue;
+}
+
+.tooltip-apk-tbr > .tooltip-inner {
+  background-color: red;
+}
+
+.tooltip-apk-tbr .arrow::before {
+  border-right-color: red;
+}
+
+#apktbr:hover {
   background-color: red;
 }
 
@@ -127,7 +139,7 @@ td {
 }
 
 /* Selects all <a> elements inside .animatedTitle divs where the parent is .projectTitle */
-.projectTitle>.animatedTitle a {
+.projectTitle > .animatedTitle a {
   font-size: 25px;
 }
 
